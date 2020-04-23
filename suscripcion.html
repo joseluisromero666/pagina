@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+  <script language="javascript" src="funciones.js"></script>
+  <link href="album.css" rel="stylesheet">
+  <title>Pagina Corporativa </title>
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="AnimeFLV.png" id="A">
+          <br>
+          <section class="p">
+            <p>AnimeFLV tu fuente de anime gratis en hd</p>
+            <button type="button" class="btn btn-link" onclick=RegresarSuscrp()>Suscribete</button>
+        </a>
+        </section>
+      </div>
+    </div>
+    <div>
+
+
+      <section class="principal">
+
+        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarIN()>Inicio</button>
+        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarSe()>Series</button>
+        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarEn()>En emisión</button>
+
+
+      </section>
+    </div>
+  </header>
+  <center>
+
+
+    <form role="form">
+      <div class="col-sm-5" style="background-color:#dbdbdb ;">
+        <h1>Suscribirse</h1>
+        <center>
+          <label for="txtN">Nombres</label></center>
+        <input type="text" name="txtN" id="txtN" placeholder="Introduce tu nombre">
+        <br>
+        <center>
+          <label for="txtAP">Apellidos</label></center>
+        <input type="text" name="txtAP" id="txtAP " placeholder="Introduce tus apellidos">
+        <br>
+
+        <label for="ejemplo_email_1">Email</label>
+        <input type="email" class="form-control" id="ejemplo_email_1" placeholder="Introduce tu email">
+
+
+        <label for="ejemplo_password_1">Contraseña</label>
+        <input type="password" class="form-control" id="ejemplo_password_1" placeholder="Contraseña">
+
+        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarOk()>Enviar</button>
+
+      </div>
+    </form>
+
+  </center>
+
+  </main>
+
+</body>
+
+</html>
