@@ -2,87 +2,115 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-  crossorigin="anonymous"></script>
-  <script language="javascript" src="funciones.js"></script>
-  <link href="album.css" rel="stylesheet">
-  <title>Pagina Corporativa </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script language="javascript" src="funciones.js"></script>
+    <link href="album.css" rel="stylesheet">
+    <title>Pagina Corporativa </title>
 
 
 </head>
 
 <body>
 
-  <header>
-    <div class="navbar navbar-dark bg-dark box-shadow">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <img src="AnimeFLV.png" id="A">
-          <br>
-          <section class="p">
-            <p>AnimeFLV tu fuente de anime gratis en hd</p>
-            <button type="button" class="btn btn-link" onclick=RegresarSuscrp()>Suscribete</button>
-        </a>
-        </section>
-      </div>
-    </div>
-    <div>
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="AnimeFLV.png" id="A">
+                    <br>
+                    <section class="p">
+                        <p>AnimeFLV tu fuente de anime gratis en hd</p>
+                </a>
+                </section>
+                <section class="principal">
+                    <a class="button" href="#" onclick=RegresarIN()>Inicio</a>
+                    <a class="button" href="#" onclick=RegresarSe()>Series</a>
+                    <a class="button" href="#" onclick=RegresarEn()>Emisión</a>
+                    <a class="button" href="#" onclick=RegresarSuscrp()>Suscribete</a>
+                </section>
+            </div>
+        </div>
 
-
-      <section class="principal">
-
-        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarIN()>Inicio</button>
-        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarSe()>Series</button>
-        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarEn()>En emisión</button>
-
-
-      </section>
-    </div>
-  </header>
-  <center>
-
-
-    <form role="form">
-      <div class="col-sm-5" style="background-color:#dbdbdb ;">
-        <h1>Suscribirse</h1>
-        <center>
-          <label for="txtN">Nombres</label></center>
-        <input type="text" name="txtN" id="txtN" placeholder="Introduce tu nombre">
+    </header>
+    <center>
         <br>
-        <center>
-          <label for="txtAP">Apellidos</label></center>
-        <input type="text" name="txtAP" id="txtAP " placeholder="Introduce tus apellidos">
-        <br>
+        <form role="form">
+            <div class="col-sm-5" style="background-color:#dbdbdb ;">
+                <h1>Suscribirse</h1>
+                <center>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" class="form-control" name="nombre" id="nombre" required="required" placeholder="Introduce tu nombre">
 
-        <label for="ejemplo_email_1">Email</label>
-        <input type="email" class="form-control" id="ejemplo_email_1" placeholder="Introduce tu email">
+                    <br>
+                    <center>
+                        <label for="apellidos">Apellidos: </label>
+                        <input type="text" class="form-control" name="apellidos" id="apellidos" required="required" placeholder="Introduce tus apellidos">
+                    </center>
+
+                    <br>
+                    <label for="direccion">Dirección: </label>
+                    <input type="text" class="form-control" name="direccion" id="direccion" required="required" placeholder="Introduce tu dirección">
+                    <br>
+
+                    <label for="direccion">Genero: </label>
+                    <br>
+                    <div class="div1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genero" id="hombre" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                Hombre
+              </label>
+                        </div>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="genero" id="mujer" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                Mujer
+              </label>
+                        </div>
 
 
-        <label for="ejemplo_password_1">Contraseña</label>
-        <input type="password" class="form-control" id="ejemplo_password_1" placeholder="Contraseña">
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="mayor" id="mayor" required="required">
+                            <label class="form-check-label" for="defaultCheck1">
+              Es mayor de 18 años:
+            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <label for="Email">Email</label>
+                    <input type="text" class="form-control" name="email" id="email" required="required" placeholder="Introduce tu email">
+                    <br>
 
-        <button type="button" class="btn btn-info btn-lg btn-block" onclick=RegresarOk()>Enviar</button>
+                    <label for="Contraseña">Contraseña</label>
+                    <input type="password" class="form-control" name="pass" id="pass" required="required" placeholder="Introduce tu contraseña">
+                    <br>
+                    <button type="button" class="btn btn-info btn-lg btn-block" class="btn btn-success" id="botonenviar" value="Enviar">Enviar</button>
+            </div>
+        </form>
 
-      </div>
-    </form>
+        </center>
 
-  </center>
+        </main><br><br>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <p>Anime Online - AnimeFLV - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+                    <div id="abajo">
 
-  </main>
-
+                        &#160;&#160;<img src="f.png"><img src="t.png"><img src="i.png">
+                    </div>
+                </a>
+            </div>
+        </div>
 </body>
 
 </html>

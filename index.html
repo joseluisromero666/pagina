@@ -2,385 +2,247 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-  crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-  crossorigin="anonymous"></script>
-  <script language="javascript" src="funciones.js"></script>
-  <link href="album.css" rel="stylesheet">
-  <title>Pagina Corporativa </title>
 
- 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script language="javascript" src="funciones.js"></script>
+    <link href="album.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pagina Corporativa </title>
 
+    <!-- Custom styles for this template -->
 
-  <!-- Custom styles for this template -->
- 
 </head>
 
 <body>
 
-  <header>
-    <div class="navbar navbar-dark bg-dark box-shadow">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <img src="AnimeFLV.png" id="A">
-          <br>
-          <section class="p">
-            <p>AnimeFLV tu fuente de anime gratis en hd</p>
-            <button type="button" class="btn btn-link"
-            onclick=RegresarSuscrp()>Suscribete</button>
-        </a>
-        </section>
-      </div>
-    </div>
-    <div>
-
-
-      <section class="principal">
-
-        <button type="button" class="btn btn-info btn-lg btn-block"
-         onclick=RegresarIN()>Inicio</button>
-        <button type="button" class="btn btn-info btn-lg btn-block" 
-        onclick=RegresarSe()>Series</button>
-        <button type="button" class="btn btn-info btn-lg btn-block"
-         onclick=RegresarEn()>En emisión</button>
-
-
-      </section>
-
-
-
-    </div>
-  </header>
-
-  <main role="main">
-
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="Lunes">
-          <h1>Ultimos episodios del dia Lunes</h1><br><br>
-          <div class="row">
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img src="19.png" id="img19">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="AnimeFLV.png" id="A">
+                    <br>
+                    <section class="p">
+                        <p>AnimeFLV tu fuente de anime gratis en hd</p>
+                </a>
+                </section>
+                <section class="principal">
+                    <a class="button" href="#" onclick=RegresarIN()>Inicio</a>
+                    <a class="button" href="#" onclick=RegresarSe()>Series</a>
+                    <a class="button" href="#" onclick=RegresarEn()>Emisión</a>
+                    <a class="button" href="#" onclick=RegresarSuscrp()>Suscribete</a>
+                </section>
             </div>
+        </div>
+        <br>
+    </header>
 
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img src="20.png" id="img20">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img src="21.png" id="img21">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img src="22.png" id="img22">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between align-items-center">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <main role="main">
+        <div class="container">
+            <div class="Lunes">
+                <h1>Ultimos episodios del dia Lunes</h1><br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="19.png" id="img19" class="grabbing" onclick=yesterday()>
+                        </div>
+                    </div>
 
-          <div class="album py-5 bg-light">
-            <div class="container">
-              <div class="Martes">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="20.png" id="img20" class="grabbing" onclick=otome()>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="21.png" id="img21" class="grabbing" onclick=arte()>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="22.png" id="img22" class="grabbing" onclick=Bungou()>
+                        </div>
+                    </div>
+    </main>
+    <main role="main">
+        <div class="container">
+            <div class="Martes">
                 <h1>Ultimos episodios del dia Martes</h1><br><br>
                 <div class="row">
-                  <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                      <img src="23.png" id="img23">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="23.png" id="img23" class="grabbing" onclick=Shokugeki()>
                         </div>
-                      </div>
                     </div>
-                  </div>
-
-                  <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                      <img src="24.png" id="img24">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="24.png" id="img24" class="grabbing" onclick=Kakushigoto()>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                      <img src="25.png" id="img25">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="25.png" id="img25" class="grabbing" onclick=Gekokujou()>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="card mb-4 box-shadow">
-                      <img src="8.png" id="img8">
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="8.png" id="img8" class="grabbing" onclick=Tamayomi()>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
 
-
-
-                <div class="album py-5 bg-light">
-                  <div class="container">
-                    <div class="Miercoles">
-                      <h1>Ultimos episodios del dia Miercoles</h1><br><br>
-                      <div class="row">
-                        <div class="col-md-3">
-                          <div class="card mb-4 box-shadow">
+    </main>
+    <main role="main">
+        <div class="container">
+            <div class="Miercoles">
+                <h1>Ultimos episodios del dia Miercoles</h1><br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
                             <img src="9.png" id="img9">
-                            <div class="card-body">
-                              <div class="d-flex justify-content-between align-items-center">
-                              </div>
-                            </div>
-                          </div>
                         </div>
-
-                        <div class="col-md-3">
-                          <div class="card mb-4 box-shadow">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
                             <img src="10.png" id="img10">
-                            <div class="card-body">
-                              <div class="d-flex justify-content-between align-items-center">
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                        <div class="col-md-3">
-                          <div class="card mb-4 box-shadow">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
                             <img src="11.png" id="img11">
-                            <div class="card-body">
-                              <div class="d-flex justify-content-between align-items-center">
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                        <div class="col-md-3">
-                          <div class="card mb-4 box-shadow">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
                             <img src="12.png" id="img12">
-                            <div class="card-body">
-                              <div class="d-flex justify-content-between align-items-center">
-                              </div>
-                            </div>
-                          </div>
                         </div>
-                      </div>
+                    </div>
 
+    </main>
+    <main role="main">
+        <div class="container">
+            <div class="Jueves">
+                <h1>Ultimos episodios del dia Jueves</h1><br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="13.png" id="img13">
+                        </div>
+                    </div>
 
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="14.png" id="img14">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="15.png" id="img15">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="16.png" id="img16">
+                        </div>
+                    </div>
 
-                      <div class="album py-5 bg-light">
-                        <div class="container">
-                          <div class="Jueves">
-                            <h1>Ultimos episodios del dia Jueves</h1><br><br>
-                            <div class="row">
-                              <div class="col-md-3">
-                                <div class="card mb-4 box-shadow">
-                                  <img src="13.png" id="img13">
-                                  <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+    </main>
+    <main role="main">
+        <div class="container">
+            <div class="Viernes">
+                <h1>Ultimos episodios del dia Viernes</h1><br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="17.png" id="img17">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="18.png" id="img18">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="1.png" id="img1">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="2.png" id="img2">
+                        </div>
+                    </div>
+    </main>
+    <main role="main">
+        <div class="container">
+            <div class="Sabado">
+                <h1>Ultimos episodios del dia Sabado</h1><br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="3.png" id="img3">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="4.png" id="img4">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="5.png" id="img5">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="6.png" id="img6">
+                        </div>
+                    </div>
+    </main>
+    <main role="main">
+        <div class="container">
+            <div class="Domingo">
+                <h1>Ultimos episodios del dia Domingo</h1><br><br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="7.png" id="img7">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="8.png" id="img8">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="9.png" id="img9">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card mb-4 box-shadow">
+                            <img src="16.png" id="img16">
+                        </div>
+                    </div>
 
-                              <div class="col-md-3">
-                                <div class="card mb-4 box-shadow">
-                                  <img src="14.png" id="img14">
-                                  <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-3">
-                                <div class="card mb-4 box-shadow">
-                                  <img src="15.png" id="img15">
-                                  <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-md-3">
-                                <div class="card mb-4 box-shadow">
-                                  <img src="16.png" id="img16">
-                                  <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+    </main>
 
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <p>Anime Online - AnimeFLV - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+                <div id="abajo">
 
-                            <div class="album py-5 bg-light">
-                              <div class="container">
-                                <div class="Viernes">
-                                  <h1>Ultimos episodios del dia Viernes</h1><br><br>
-                                  <div class="row">
-                                    <div class="col-md-3">
-                                      <div class="card mb-4 box-shadow">
-                                        <img src="17.png" id="img17">
-                                        <div class="card-body">
-                                          <div class="d-flex justify-content-between align-items-center">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
+                    &#160;&#160;<img src="f.png"><img src="t.png"><img src="i.png">
+                </div>
+            </a>
+        </div>
+    </div>
 
-                                    <div class="col-md-3">
-                                      <div class="card mb-4 box-shadow">
-                                        <img src="18.png" id="img18">
-                                        <div class="card-body">
-                                          <div class="d-flex justify-content-between align-items-center">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <div class="card mb-4 box-shadow">
-                                        <img src="1.png" id="img1">
-                                        <div class="card-body">
-                                          <div class="d-flex justify-content-between align-items-center">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                      <div class="card mb-4 box-shadow">
-                                        <img src="2.png" id="img2">
-                                        <div class="card-body">
-                                          <div class="d-flex justify-content-between align-items-center">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-
-
-                                  <div class="album py-5 bg-light">
-                                    <div class="container">
-                                      <div class="Sabado">
-                                        <h1>Ultimos episodios del dia Sabado</h1><br><br>
-                                        <div class="row">
-                                          <div class="col-md-3">
-                                            <div class="card mb-4 box-shadow">
-                                              <img src="3.png" id="img3">
-                                              <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-md-3">
-                                            <div class="card mb-4 box-shadow">
-                                              <img src="4.png" id="img4">
-                                              <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-3">
-                                            <div class="card mb-4 box-shadow">
-                                              <img src="5.png" id="img5">
-                                              <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="col-md-3">
-                                            <div class="card mb-4 box-shadow">
-                                              <img src="6.png" id="img6">
-                                              <div class="card-body">
-                                                <div class="d-flex justify-content-between align-items-center">
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-
-
-
-                                        <div class="album py-5 bg-light">
-                                          <div class="container">
-                                            <div class="Domingo">
-                                              <h1>Ultimos episodios del dia Domingo</h1><br><br>
-                                              <div class="row">
-                                                <div class="col-md-3">
-                                                  <div class="card mb-4 box-shadow">
-                                                    <img src="7.png" id="img7">
-                                                    <div class="card-body">
-                                                      <div class="d-flex justify-content-between align-items-center">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-
-                                                <div class="col-md-3">
-                                                  <div class="card mb-4 box-shadow">
-                                                    <img src="8.png" id="img8">
-                                                    <div class="card-body">
-                                                      <div class="d-flex justify-content-between align-items-center">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                  <div class="card mb-4 box-shadow">
-                                                    <img src="9.png" id="img9">
-                                                    <div class="card-body">
-                                                      <div class="d-flex justify-content-between align-items-center">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                  <div class="card mb-4 box-shadow">
-                                                    <img src="16.png" id="img16">
-                                                    <div class="card-body">
-                                                      <div class="d-flex justify-content-between align-items-center">
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-  </main>
 </html>

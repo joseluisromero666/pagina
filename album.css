@@ -1,43 +1,58 @@
-:root {
-  --jumbotron-padding-y: 3rem;
+h1,
+h2 {
+    text-shadow: 0 0 30px#0197ba;
 }
 
-.jumbotron {
-  padding-top: var(--jumbotron-padding-y);
-  padding-bottom: var(--jumbotron-padding-y);
-  margin-bottom: 0;
-  background-color: #fff;
-}
-@media (min-width: 768px) {
-  .jumbotron {
-    padding-top: calc(var(--jumbotron-padding-y) * 2);
-    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
-  }
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 14px 80px;
+    border: 1px solid #0197ba;
+    border-radius: 0px;
+    background: #01f6ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#01f6ff), to(#0197ba));
+    background: -moz-linear-gradient(top, #01f6ff, #0197ba);
+    background: linear-gradient(to bottom, #01f6ff, #0197ba);
+    -webkit-box-shadow: #01e3ff 0px 0px 40px 0px;
+    -moz-box-shadow: #01e3ff 0px 0px 40px 0px;
+    box-shadow: #01e3ff 0px 0px 40px 0px;
+    text-shadow: #015f75 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+    padding-left: auto;
 }
 
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.button:hover,
+.button:focus {
+    border: 1px solid #01bde9;
+    background: #01ffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#01ffff), to(#01b5df));
+    background: -moz-linear-gradient(top, #01ffff, #01b5df);
+    background: linear-gradient(to bottom, #01ffff, #01b5df);
+    color: #ffffff;
+    text-decoration: none;
 }
 
-footer p {
-  margin-bottom: .25rem;
+.button:active {
+    background: #0197ba;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0197ba), to(#0197ba));
+    background: -moz-linear-gradient(top, #0197ba, #0197ba);
+    background: linear-gradient(to bottom, #0197ba, #0197ba);
 }
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.div1 {
+    display: flex;
+}
 
-.principal{
-  display: flex;
-  }
+@media (min-width:1011px) {
+    .principal {
+        display: flex;
+    }
+}
+
+.grabbing {
+    cursor: pointer;
+    cursor: hand;
+}
