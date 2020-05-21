@@ -62,8 +62,11 @@ img.zoom {
     display: flex;
 }
 
-@media (min-width:1011px) {
+@media (min-width: 1011px) {
     .principal {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 }
