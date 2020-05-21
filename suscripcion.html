@@ -1,8 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/47cb3627f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -14,103 +16,249 @@
     <link href="album.css" rel="stylesheet">
     <title>Pagina Corporativa </title>
 
-
+    <style>
+        form {
+            background-color: white;
+            border-radius: 0 0 3px 3px;
+            color: #999;
+            font-size: 0.8em;
+            padding: 20px;
+            margin: 0 auto;
+            width: 300px;
+        }
+        
+        input,
+        textarea {
+            border: 0;
+            outline: none;
+            width: 280px;
+        }
+        
+        .field {
+            border: solid 1px #ccc;
+            border-radius: 0 4px 4px 0;
+            padding: 10px;
+            width: 240px;
+        }
+        
+        .field:focus {
+            border-color: #18A383;
+        }
+        
+        .center-content {
+            text-align: center;
+        }
+        
+        .field-container div {
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .field-container i {
+            background-color: #eee;
+            border-radius: 4px 0 0 4px;
+            color: #888;
+            padding: 10px 10px 11px 10px;
+            border: solid 1px #ccc;
+            max-height: 35px;
+            margin-right: -5px;
+            vertical-align: top;
+        }
+        
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu ul li {
+            display: inline-block;
+            width: 50%;
+            margin-right: -4px;
+        }
+        
+        #menu ul li a {
+            background-color: #ccc;
+            color: #222;
+            display: block;
+            padding: 20px 20px;
+            text-decoration: none;
+        }
+        
+        #menu ul li a:hover {
+            background-color: #eee;
+        }
+        
+        #formularios,
+        #menu {
+            background: #dbdbdb;
+            width: 350px;
+        }
+        
+        .active {
+            background-color: white !important;
+        }
+        
+        .columns>div {
+            width: 50%;
+            display: inline-block;
+            vertical-align: top;
+            margin-right: -4px;
+        }
+        
+        .columns .field {
+            width: 80px;
+        }
+        
+        #form_register {
+            display: none;
+        }
+        
+        .centro {
+            /* IMPORTANTE */
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
 </head>
 
-<body>
-
-    <header>
-        <div class="navbar navbar-dark bg-dark box-shadow">
-            <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <img src="AnimeFLV.png" id="A">
-                    <br>
-                    <section class="p">
-                        <p>AnimeFLV tu fuente de anime gratis en hd</p>
-                </a>
-                </section>
-                <section class="principal">
-                    <a class="button" href="#" onclick=RegresarIN()>Inicio</a>
-                    <a class="button" href="#" onclick=RegresarSe()>Series</a>
-                    <a class="button" href="#" onclick=RegresarEn()>Emisión</a>
-                    <a class="button" href="#" onclick=RegresarSuscrp()>Suscribete</a>
-                </section>
-            </div>
+<header>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="AnimeFLV.png" id="A">
+                <br>
+                <section class="p">
+                    <p>AnimeFLV tu fuente de anime gratis en hd</p>
+            </a>
+            </section>
+            <section class="principal">
+                <a class="button" href="#" onclick=RegresarIN()>Inicio</a>
+                <a class="button" href="#" onclick=RegresarSe()>Series</a>
+                <a class="button" href="#" onclick=RegresarEn()>Emisión</a>
+                <a class="button" href="#" onclick=RegresarSuscrp()>Suscribete</a>
+            </section>
         </div>
+    </div>
 
-    </header>
-    <center>
-        <br>
-        <form role="form">
-            <div class="col-sm-5" style="background-color:#dbdbdb ;">
-                <h1>Suscribirse</h1>
-                <center>
-                    <label for="nombre">Nombre: </label>
-                    <input type="text" class="form-control" name="nombre" id="nombre" required="required" placeholder="Introduce tu nombre">
+</header>
 
-                    <br>
-                    <center>
-                        <label for="apellidos">Apellidos: </label>
-                        <input type="text" class="form-control" name="apellidos" id="apellidos" required="required" placeholder="Introduce tus apellidos">
-                    </center>
+<body>
+    <br>
 
-                    <br>
-                    <label for="direccion">Dirección: </label>
-                    <input type="text" class="form-control" name="direccion" id="direccion" required="required" placeholder="Introduce tu dirección">
-                    <br>
+    <div id="menu" class="centro">
+        <ul>
+            <li><a href="#" class="active">Iniciar Sesión</a></li>
+            <li><a href="#">Registrarse</a></li><br>
+        </ul>
+    </div>
+    <div id="formularios" class="centro">
 
-                    <label for="direccion">Genero: </label>
-                    <br>
-                    <div class="div1">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="genero" id="hombre" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                Hombre
-              </label>
-                        </div>
-                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="genero" id="mujer" checked>
-                            <label class="form-check-label" for="exampleRadios1">
-                Mujer
-              </label>
-                        </div>
+        <form action="" id="form_session">
 
-
-                        &nbsp; &nbsp; &nbsp; &nbsp;
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="mayor" id="mayor" required="required">
-                            <label class="form-check-label" for="defaultCheck1">
-              Es mayor de 18 años:
-            </label>
-                        </div>
-                    </div>
-                    <br>
-                    <label for="Email">Email</label>
-                    <input type="text" class="form-control" name="email" id="email" required="required" placeholder="Introduce tu email">
-                    <br>
-
-                    <label for="Contraseña">Contraseña</label>
-                    <input type="password" class="form-control" name="pass" id="pass" required="required" placeholder="Introduce tu contraseña">
-                    <br>
-                    <button type="button" class="btn btn-info btn-lg btn-block" class="btn btn-success" id="botonenviar" value="Enviar">Enviar</button>
+            <p>Correo electrónico:</p>
+            <div class="field-container">
+                <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i>
+                <input type="text" class="field" name="email2" id="email2" placeholder="user@example.com"> <br/>
             </div>
+
+            <p>Contraseña:</p>
+            <div class="field-container">
+                <i class="fa fa-key fa-lg" aria-hidden="true"></i>
+                <input type="password" name="pass2" id="pass2" class="field" placeholder="*******"> <br/>
+            </div>
+
+            <br><br>
+            <p class="center-content">
+                <button type="button" class="button" class="btn btn-success" id="botonenviar2" value="Enviar">Iniciar Sesión</button>
+            </p>
         </form>
 
-        </center>
+        <form action="" id="form_register">
 
-        </main><br><br>
-        <div class="navbar navbar-dark bg-dark box-shadow">
-            <div class="container d-flex justify-content-between">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <p>Anime Online - AnimeFLV - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
-                    <div id="abajo">
-
-                        &#160;&#160;<img src="f.png"><img src="t.png"><img src="i.png">
-                    </div>
-                </a>
+            <div class="columns">
+                <div class="field-container">
+                    <p> Nombre:</p>
+                    <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
+                    <input type="text" name="nombre" id="nombre" class="field" placeholder="Jose..."> <br/>
+                </div>
+                <div class="field-container">
+                    <p> Apellido:</p>
+                    <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
+                    <input type="text" name="apellidos" id="apellidos" class="field" placeholder="Romero..."> <br/>
+                </div>
             </div>
-        </div>
+            <br>
+            <p>Dirección:</p>
+            <div class="field-container">
+                <i class="fas fa-address-book"></i>
+                <input name="direccion" id="direccion" type="text " class="field " placeholder="Carrera 9 Bis No. 62 - 43... "> <br/>
+            </div>
+            <div class="div"><br>
+                <div class="form-check">
+                    <i class="fas fa-male"></i>
+                    <input class="form-check-input" type="radio" name="genero" id="hombre" checked>
+                    <label class="form-check-label" for="exampleRadios1">Hombre &nbsp;</label>
+                </div><br>
+                <div class="form-check">
+                    <i class="fas fa-female"></i>
+                    <input class="form-check-input" type="radio" name="genero" id="mujer" checked>
+                    <label class="form-check-label" for="exampleRadios1">Mujer</label>
+                </div>
+            </div>
+            <br>
+            <div class="form-check">
+                <i class="fas fa-user-graduate"></i>
+                <input class="form-check-input" type="checkbox" name="mayor" id="mayor" required="required">
+                <label class="form-check-label" for="defaultCheck1"> Es mayor de 18 años:&nbsp;</label>
+            </div> <br>
+            <p>Correo electrónico:</p>
+            <div class="field-container ">
+                <i class="fa fa-envelope-o fa-lg " aria-hidden="true "></i>
+                <input type="text " class="field " name="email" id="email" placeholder="user@example.com "> <br/>
+            </div>
+
+            <br>
+            <p>Contraseña:</p>
+            <div class="field-container ">
+                <i class="fa fa-key fa-lg " aria-hidden="true "></i>
+                <input type="password " name="pass" id="pass" class="field " placeholder="******* "> <br/>
+            </div>
+
+            <div class="columns ">
+                <div class="field-container ">
+                    <p> Compañía:</p>
+                    <i class="fa fa-building fa-lg " aria-hidden="true "></i>
+                    <input type="text " class="field " name="Compañía" id="Compañía" placeholder="Microsoft "> <br/>
+                </div>
+                <div class="field-container ">
+                    <p> Teléfono:</p>
+                    <i class="fa fa-phone fa-lg " aria-hidden="true "></i>
+                    <input type="text " class="field " name="Teléfono" id="Teléfono" placeholder="+57 313... "> <br/>
+                </div>
+            </div><br>
+            <p class="center-content ">
+                <button type="button" class="button" class="btn btn-success" id="botonenviar" value="Enviar">Crear Cuenta</button>
+                <!-- -->
+            </p>
+        </form>
+    </div>
+
+    <script src="jquery.js "></script>
+    <script>
+        $(function() {
+            $("#menu li ").on("click ", function() {
+                var i = $(this).index();
+                $("#formularios form ").hide();
+                $("#formularios form ").eq(i).show();
+                $("#menu li a ").removeClass("active ");
+                $(this).find("a ").addClass("active ");
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

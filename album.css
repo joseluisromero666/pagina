@@ -3,6 +3,22 @@ h2 {
     text-shadow: 0 0 30px#0197ba;
 }
 
+img.zoom {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.transition {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 .button {
     display: inline-block;
     text-align: center;
@@ -50,9 +66,4 @@ h2 {
     .principal {
         display: flex;
     }
-}
-
-.grabbing {
-    cursor: pointer;
-    cursor: hand;
 }
