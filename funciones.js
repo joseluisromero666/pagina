@@ -230,3 +230,43 @@ function validarForm2() {
     window.open("index.html", "_self");
     return true;
 }
+
+function Ghost() {
+    window.open("Ghost.html", "_self");
+}
+
+function Accel() {
+    window.open("Accel.html", "_self");
+}
+
+function eye() {
+    window.open("eye.html", "_self");
+}
+
+function sai() {
+    window.open("sai.html", "_self");
+}
+
+function Hoken() {
+    window.open("Hoken.html", "_self");
+}
+
+function Buddy() {
+    window.open("Buddy.html", "_self");
+}
+
+function zero() {
+    window.open("zero.html", "_self");
+}
+
+function youkoso() {
+    window.open("youkoso.html", "_self");
+}
+
+function akame() {
+    window.open("akame.html", "_self");
+}
+
+function no_game() {
+    window.open("no_game.html", "_self");
+}

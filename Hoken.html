@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script language="javascript" src="funciones.js"></script>
+    <link href="album.css" rel="stylesheet">
+</head>
+<style>
+    @media (min-width: 1011px) {
+        .principal4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+    
+    .principal3 {
+        margin-left: 15px;
+    }
+    
+    img {
+        border-radius: 3%;
+    }
+    
+    .WdgtCn {
+        background-color: #fff;
+        border-radius: 3px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, .1);
+        padding: 15px 20px 20px;
+        margin-bottom: 20px;
+    }
+    
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary,
+    picture {
+        display: block;
+    }
+    
+    *,
+     ::before,
+     ::after {
+        box-sizing: border-box;
+        margin: 0;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+    
+    body {
+        color: #9da1a4;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .Description {
+        width: 900px;
+        height: 150px;
+        box-sizing: content-box;
+        display: flex;
+    }
+    
+    .N {
+        padding-left: 32%;
+    }
+    
+    .li {
+        padding-left: 30%;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="AnimeFLV.png" id="A">
+                    <br>
+                    <section class="p">
+                        <p>AnimeFLV tu fuente de anime gratis en hd</p>
+                </a>
+                </section>
+                <section class="principal">
+                    <a class="button" href="#" onclick=RegresarIN()>Inicio</a>
+                    <a class="button" href="#" onclick=RegresarSe()>Series</a>
+                    <a class="button" href="#" onclick=RegresarEn()>Emisión</a>
+                    <a class="button" href="#" onclick=RegresarSuscrp()>Suscribete</a>
+                </section>
+            </div>
+            <section class="principal4">
+                <img src="ho1.png">
+            </section>
+        </div>
+        <br>
+    </header>
+    <br>
+    <div class="contenedor1">
+        <nav class="N">
+
+            <a button type="button" class="btn btn-primary" href="/browse?genre=demonios">Ecchi</a>
+            <a button type="button" class="btn btn-primary" href="/browse?genre=fantasia">Parodia</a>
+
+            <a button type="button" class="btn btn-primary" href="/browse?genre=magia">Romance</a>
+            <a button type="button" class="btn btn-primary" href="/browse?genre=magia">Seinen</a>
+
+        </nav>
+        <div class="Description">
+            <section class="principal3">
+                <img src="ho2.png">
+            </section>
+            <div class="Title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><br>
+            <p><br>Basado en un libro guía del mismo nombre, que se enfoca hacia hombres que estén entre los 30 años a más y que aún no han tenido experiencia alguna con mujeres sea romántica o sexualmente. </p>
+        </div>
+    </div>
+    <div class="li">
+        <section class="WdgtCn">
+            <div class="Top">
+                <div class="Title">Lista de episodios</div>
+                <div class="lstopt-frm">
+                    <span class="order-lst">
+
+            <ul class="ListCaps" id="episodeList" style="max-height: 400px; overflow-y: auto;">
+              
+            
+                    <li class="fa-play-circle"><a href="/ver/12785/30-sai-no-hoken-taiiku-12">
+                        <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/12/th_3.jpg" style="display: block;">
+                        </figure><p>Episodio 12</p></a><label for="epi12" class="opivw"><input id="epi12" class="mseen" data-number="12" style="display: none;" type="checkbox"><span class="Stts">
+                    </label>
+                    </li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/12330/30-sai-no-hoken-taiiku-11">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/11/th_3.jpg" style="display: block;"></figure>
+                         
+                            <p>Episodio 11</p>
+                        </a><label for="epi11" class="opivw"><input id="epi11" class="mseen" data-number="11" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/11770/30-sai-no-hoken-taiiku-10">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/10/th_3.jpg" style="display: block;"></figure>
+
+                            <p>Episodio 10</p>
+                        </a><label for="epi10" class="opivw"><input id="epi10" class="mseen" data-number="10" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/11296/30-sai-no-hoken-taiiku-9">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/9/th_3.jpg" style="display: block;"></figure>
+                         
+                            <p>Episodio 9</p>
+                        </a><label for="epi9" class="opivw"><input id="epi9" class="mseen" data-number="9" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/10936/30-sai-no-hoken-taiiku-8">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/8/th_3.jpg" style="display: block;"></figure>
+                         
+                            <p>Episodio 8</p>
+                        </a><label for="epi8" class="opivw"><input id="epi8" class="mseen" data-number="8" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/10464/30-sai-no-hoken-taiiku-7">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/7/th_3.jpg" style="display: block;"></figure>
+                         
+                            <p>Episodio 7</p>
+                        </a><label for="epi7" class="opivw"><input id="epi7" class="mseen" data-number="7" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/10309/30-sai-no-hoken-taiiku-6">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/6/th_3.jpg" style="display: block;"></figure>
+                          
+                            <p>Episodio 6</p>
+                        </a><label for="epi6" class="opivw"><input id="epi6" class="mseen" data-number="6" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/10267/30-sai-no-hoken-taiiku-5">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/5/th_3.jpg" style="display: block;"></figure>
+                         
+                            <p>Episodio 5</p>
+                        </a><label for="epi5" class="opivw"><input id="epi5" class="mseen" data-number="5" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/9695/30-sai-no-hoken-taiiku-4">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/4/th_3.jpg" style="display: block;"></figure>
+                          
+                            <p>Episodio 4</p>
+                        </a><label for="epi4" class="opivw"><input id="epi4" class="mseen" data-number="4" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/9584/30-sai-no-hoken-taiiku-3">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/3/th_3.jpg" style="display: block;"></figure>
+                           
+                            <p>Episodio 3</p>
+                        </a><label for="epi3" class="opivw"><input id="epi3" class="mseen" data-number="3" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/9517/30-sai-no-hoken-taiiku-2">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/2/th_3.jpg" style="display: block;"></figure>
+                         
+                            <p>Episodio 2</p>
+                        </a><label for="epi2" class="opivw"><input id="epi2" class="mseen" data-number="2" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    <li class="fa-play-circle">
+                        <a href="/ver/9469/30-sai-no-hoken-taiiku-1">
+                            <figure><img class="lazy" alt="" src="https://cdn.animeflv.net/screenshots/374/1/th_3.jpg" style="display: block;"></figure>
+                      
+                            <p>Episodio 1</p>
+                        </a><label for="epi1" class="opivw"><input id="epi1" class="mseen" data-number="1" style="display: none;" type="checkbox"><span class="Stts"></label></li>
+                    </ul>
+        </section>
+        </div>
+
+        <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <p>Anime Online - AnimeFLV - Ningún vídeo se encuentra alojado en nuestros servidores.</p>
+                    <div id="abajo">
+                        &#160;&#160;<img src="f.png"><img src="t.png"><img src="i.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+</body>
+
+</html>
